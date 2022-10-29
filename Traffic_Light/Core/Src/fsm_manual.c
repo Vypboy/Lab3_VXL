@@ -18,24 +18,16 @@ void fsm_manial_run(){
 			//TODO for mode2(RED_STATE)
 			modification_mode();
 
-
-			if(timer1_flag==1){
-				status_col=AUTO_RED;
-				setTimer1(Time_Auto_Red);
-				status_row=AUTO_GREEN;
-				setTimer4(Time_Auto_Green);
-			}
-
 			//chuyen trang thai co dk
 			//reset system khi ket thuc mode
-//			if(timer1_flag==1){
-//				status_col=INIT;
-//				status_row=INIT;
-//			}
+			if(timer1_flag==1){
+				status_col=INIT;
+				status_row=INIT;
+			}
 
 			if(isButton1Pressed()==1){
 				status_col=MAN_GREEN;
-				setTimer1(10000);
+				setTimer1(MODE_TIME);
 			}
 			break;
 		case MAN_GREEN:
@@ -52,7 +44,7 @@ void fsm_manial_run(){
 			}
 			if(isButton1Pressed()==1){
 				status_col=MAN_YELLOW;
-				setTimer1(10000);
+				setTimer1(MODE_TIME);
 			}
 			break;
 		case MAN_YELLOW:
@@ -69,55 +61,11 @@ void fsm_manial_run(){
 			}
 			if(isButton1Pressed()==1){
 				status_col=MAN_RED;
-				setTimer1(10000);
+				setTimer1(MODE_TIME);
 			}
 			break;
 		default:
 			break;
 	}
 
-//	switch(status_row){
-//		case MAN_RED:
-//			Display_Led_Red2();
-//
-//
-//			//chuyen trang thai co dk
-//			if(timer4_flag==1){
-//				status_row=AUTO_RED;
-//				setTimer4(Time_Auto_Red);
-//			}
-//			if(isButton1Pressed()==1){
-//				status_row=MAN_GREEN;
-//				setTimer4(10000);
-//			}
-//			break;
-//		case MAN_GREEN:
-//			Display_Led_Green2();
-//
-//			//chuyen trang thai co dk
-//			if(timer4_flag==1){
-//				status_row=AUTO_GREEN;
-//				setTimer4(Time_Auto_Green);
-//			}
-//			if(isButton1Pressed()==1){
-//				status_row=MAN_YELLOW;
-//				setTimer4(10000);
-//			}
-//			break;
-//		case MAN_YELLOW:
-//			Display_Led_Yellow2();
-//
-//			//chuyen trang thai co dk
-//			if(timer4_flag==1){
-//				status_row=AUTO_YELLOW;
-//				setTimer4(Time_Auto_Yellow);
-//			}
-//			if(isButton1Pressed()==1){
-//				status_row=MAN_RED;
-//				setTimer4(10000);
-//			}
-//			break;
-//		default:
-//			break;
-//	}
 }

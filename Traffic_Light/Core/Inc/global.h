@@ -21,6 +21,9 @@
 #define MAN_GREEN	13
 #define MAN_YELLOW 	14
 
+//thoi gian trang thai mode
+#define MODE_TIME 	15000
+
 extern int status_col;
 extern int status_row;
 
