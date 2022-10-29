@@ -1,0 +1,11 @@
+Display.c:16:6:Display_Init	8	static
+Display.c:25:6:Display_Led_Red1	8	static
+Display.c:30:6:Display_Led_Green1	8	static
+Display.c:35:6:Display_Led_Yellow1	8	static
+Display.c:41:6:Display_Led_Red2	8	static
+Display.c:46:6:Display_Led_Green2	8	static
+Display.c:51:6:Display_Led_Yellow2	8	static
+Display.c:58:6:display7SEG	16	static
+Display.c:115:6:update7SEG	16	static
+Display.c:152:6:updateClockBuffer	16	static
+Display.c:164:6:Run_7SEG	8	static

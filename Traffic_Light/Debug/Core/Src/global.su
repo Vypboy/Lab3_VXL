@@ -1,0 +1,3 @@
+global.c:19:6:set_Time_Auto_Red	16	static
+global.c:22:6:set_Time_Auto_Green	16	static
+global.c:25:6:set_Time_Auto_Yellow	16	static
