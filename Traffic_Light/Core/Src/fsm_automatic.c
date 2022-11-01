@@ -33,7 +33,7 @@ void fsm_automatic_run(){
 				status_col=MAN_RED;
 				//trong trang thai mode, chi co Red_Led hang ngang se luon duoc bat
 				status_row=MAN_RED;
-				setTimer1(10000);
+				setTimer1(MODE_TIME);
 			}
 			break;
 		case AUTO_GREEN:
@@ -47,9 +47,9 @@ void fsm_automatic_run(){
 			if(isButton1Pressed()==1){
 				status_col=MAN_GREEN;
 				//trong trang thai mode, chi co Red_Led hang ngang se luon duoc bat
-				status_row=MAN_RED;
+				status_row=MAN_GREEN;
 
-				setTimer1(10000);
+				setTimer1(MODE_TIME);
 			}
 			break;
 		case AUTO_YELLOW:
@@ -63,9 +63,9 @@ void fsm_automatic_run(){
 			if(isButton1Pressed()==1){
 				status_col=MAN_YELLOW;
 				//trong trang thai mode, chi co Red_Led hang ngang se luon duoc bat
-				status_row=MAN_RED;
+				status_row=MAN_YELLOW;
 
-				setTimer1(10000);
+				setTimer1(MODE_TIME);
 			}
 			break;
 		default:
@@ -108,15 +108,6 @@ void fsm_automatic_run(){
 				status_row=AUTO_RED;
 				setTimer4(Time_Auto_Red);
 			}
-			break;
-		case MAN_RED:
-			Display_Led_Red2();
-
-//			//chuyen trang thai co dk
-//			if(timer4_flag==1){
-//				status_row=AUTO_GREEN;
-//				setTimer4(Time_Auto_Green);
-//			}
 			break;
 		default:
 			break;

@@ -103,6 +103,7 @@ int main(void)
   setTimer1(10);
   setTimer2(10);
   setTimer3(10);
+  setTimer5(10);
   while (1)
   {
 	  Run_7SEG();
